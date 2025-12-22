@@ -1,4 +1,3 @@
-// app.ts
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -19,7 +18,7 @@ app.use(helmet({
 
 // Enhanced CORS configuration
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: 'https://assignment-silk-eight.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],

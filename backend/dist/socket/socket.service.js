@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.socketService = void 0;
-// socket/socket.service.ts - FIXED VERSION
 const socket_io_1 = require("socket.io");
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const user_model_1 = require("../models/user.model");
@@ -19,7 +18,7 @@ class SocketService {
     initialize(server) {
         this.io = new socket_io_1.Server(server, {
             cors: {
-                origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+                origin: 'https://assignment-silk-eight.vercel.app',
                 credentials: true,
                 methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
             },

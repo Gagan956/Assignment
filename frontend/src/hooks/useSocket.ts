@@ -1,4 +1,3 @@
-// hooks/useSocket.ts - FIXED VERSION
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { io, Socket } from 'socket.io-client';
 import toast from 'react-hot-toast';
@@ -27,7 +26,7 @@ export const useSocket = () => {
     }
 
     // Create new socket connection
-    const socket = io('http://localhost:5000', {
+    const socket = io('https://assignment-lf5b.onrender.com', {
       auth: { token },
       transports: ['websocket', 'polling'],
       reconnection: true,
@@ -99,7 +98,7 @@ export const useSocket = () => {
   }, [token, isAuthenticated, user, dispatch]);
 
   return {
-    getSocket, // Method to get socket
+    getSocket,
     isConnected,
   };
 };

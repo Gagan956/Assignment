@@ -10,7 +10,7 @@ interface ErrorResponse {
 }
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://assignment-lf5b.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',

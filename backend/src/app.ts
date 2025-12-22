@@ -31,8 +31,8 @@ app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
 
 // Body parsing middleware
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 app.use(cookieParser());
 
 

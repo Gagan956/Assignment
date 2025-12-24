@@ -113,8 +113,8 @@ Base URL:
 
 ##  Auth APIs
 
-| Method | Endpoint             | Description            |
-| ------ | ---------------- | | -------------------------- |
+| Method | Endpoint           | Description                |
+| ------ | ------------------ | -------------------------- |
 | POST   | `/auth/register`   | Register a new user        |
 | POST   | `/auth/login`      | Login user and return JWT  |
 | POST   | `/auth/logout`     | Logout user                |
@@ -122,7 +122,7 @@ Base URL:
 
 ---
 
-##  User APIs
+## User APIs
 
 | Method | Endpoint          | Description                |
 | ------ | ----------------  | -------------------------- |

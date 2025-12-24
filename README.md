@@ -106,7 +106,7 @@ http://localhost:5173
 Base URL:
 
 ```
-/api/v1
+/api/
 ```
 
 ---
